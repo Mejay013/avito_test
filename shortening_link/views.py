@@ -1,6 +1,13 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse,HttpRequest
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    if request.method == "POST":
+        old_link = request.POST['old_link']
+        if old_link:
+            context = {
+                'old_link': old_link
+            }
+            return render(request, 'shortening_link/index.html',context)
+    return render(request, 'shortening_link/index.html')
