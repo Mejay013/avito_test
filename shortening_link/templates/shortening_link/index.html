@@ -19,10 +19,10 @@
                      <input class="btn btn-primary" type="submit" value="Отправить">
                     </form>
 
-           {% if old_link %}
-          <div class="container">
-            <input class="form-control" type="text" placeholder="Default input">
-            </div>
+           {% if new_link %}
+           <div class="alert alert-success" role="alert">
+            Сокращенная ссылка: {{ new_link }}
+          </div>
            {% endif %}
         </div>
       </div>
