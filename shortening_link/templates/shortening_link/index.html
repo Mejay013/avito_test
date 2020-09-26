@@ -4,24 +4,34 @@
 
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4">Fluid jumbotron</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <h1 class="display-4">Сокращаем ссылки - просто!</h1>
+      <p class="lead">Без Пап, Мам и регистрации смс</p>
     </div>
   </div>
   <div class="container">
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
+          <h3 class="display1">Давайте попробуем</h3>
 
                 <form action="{% url 'shortening_link:index' %}" method="post">
                     {% csrf_token %}
+                    <div class="container">
+                      <br>
                      <input class="form-control" type="text" placeholder="Введите ссылку для сокращения" name="old_link" >
                      <input class="btn btn-primary" type="submit" value="Отправить">
                     </form>
-
+                  </div>
+                {% if warning_list %}
+                  {% for i in warning_list %}
+                    <div class="alert alert-danger" role="alert">
+                      {{i}}
+                    </div>
+                  {% endfor %}
+                {% endif %}
            {% if new_link %}
            <div class="alert alert-success" role="alert">
             Сокращенная ссылка: {{ new_link }}
+            <a href="{{ new_link }}" ><button type="button" class="btn btn-warning"> Перейти</button></a>
           </div>
            {% endif %}
         </div>
