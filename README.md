@@ -1,6 +1,7 @@
 ## Shortening links
 
 A project to create a short link **StackEdit**.
+
 Technologies used
 
 - Django 3.1.1
@@ -15,8 +16,11 @@ Technologies used
 	to have Docker on your machine.  see https://docs.docker.com/get-started/. 
 
 ```1. git clone https://github.com/Mejay013/avito_test.git ```
+
 ```2. cd avito_test```
+
 ```2. docker-compose build```
+
 ```2. docker-compose up```
 
 ## Use
