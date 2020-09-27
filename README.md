@@ -1,6 +1,6 @@
 ## Shortening links
 
-A project to create a short link **StackEdit**.
+A project to create a short link.
 
 Technologies used
 
