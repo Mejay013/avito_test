@@ -24,6 +24,19 @@ Technologies used
 ```2. docker-compose up```
 
 ## Use
+If you want a simple shortened link:
+
 1. Go to  ```localhost:8000```
 2. Paste the link in the **required field**
 3. Submit and and copy the short link
+
+![alt text](screenshots/1.png "Простая сокращенная ссылка")​
+
+If you want a castom shortened link:
+
+1. Go to  ```localhost:8000```
+2. Paste the link in the **required field**
+3. Paste the custom string in the **required field**
+4. Submit and and copy the short link
+
+![alt text](screenshots/2.png "Кастомная сокращенная ссылка")​

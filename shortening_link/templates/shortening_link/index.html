@@ -17,8 +17,10 @@
                     {% csrf_token %}
                     <div class="container">
                       <br>
-                     <input class="form-control" type="text" placeholder="Введите ссылку для сокращения" name="old_link" >
-                     <input class="form-control" type="text" placeholder="Нужна кастомная ссылка?" name="custom_link" >
+                      <label for="basic-url">Введите ссылку для сокращения </label>
+                     <input class="form-control" type="text" placeholder="Введите ссылку " name="old_link" >
+                     <label for="basic-url">Если нужна кастомная ссылка </label>
+                     <input class="form-control" type="text" placeholder="Введите желаемое сокращение" name="custom_link" >
                      <input class="btn btn-primary" type="submit" value="Отправить">
                     </form>
                   </div>
